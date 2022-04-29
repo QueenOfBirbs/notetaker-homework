@@ -3,31 +3,31 @@ const router = express.Router();
 const fs = require("fs");
 
 router.get("/", (req, res) => {
-    fs.readFile("./data/notes.json", "utf-8", (err, data) => {
+    fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
             throw err
         } else {
-            const notes = JSON.parse(data);
-            res.json(notes)
+            const newNote = JSON.parse(data);
+            res.json(newNote)
         }
     })
 })
 
 router.post("/", (req, res) => {
-    fs.readFile("./data/notes.json", "utf-8", (err, data) => {
+    fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
             throw err
         } else {
 
-            const notes = JSON.parse(data);
+            const newNote = JSON.parse(data);
             console.log(req.body)
-            notes.push(req.body)
-            fs.writeFile("./data/notes.json", JSON.stringify(notes, null, 2), (err, data) => {
+            newNote.push(req.body)
+            fs.writeFile("./db/db.json", JSON.stringify(newNote, null, 2), (err, data) => {
                 if (err) {
                     throw err
                 }
                 else {
-                    res.json(notes)
+                    res.json(newNote)
                 }
             })
         }
