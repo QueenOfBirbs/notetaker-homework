@@ -1,12 +1,15 @@
 # notetaker-homework
 
 USER STORY
+
 AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 
+
 ACCEPTANCE CRITERIA
+
 GIVEN a note-taking application
 WHEN I open the Note Taker
 THEN I am presented with a landing page with a link to a notes page
@@ -22,11 +25,15 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 
+
 WHAT I GOT DONE
+
 i got all the acceptance criteria though it definitely beat me up a little with figuring out paths and such
 didn't get to the delete bit though so that's missing
 
 
+
 NOTES
+
 photos of the finshed product and video are in the finished folder
 heroku link:
