@@ -65,15 +65,6 @@ const handleNewNoteView = function() {
   renderActiveNote();
 };
 
-// hides save button if empty, shows when fields are full
-const handleRenderSaveBtn = function() {
-  if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
-    $saveNoteBtn.hide();
-  } else {
-    $saveNoteBtn.show();
-  }
-};
-
 // list of note titles
 const renderNoteList = function(notes) {
   $noteList.empty();
