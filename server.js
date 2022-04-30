@@ -1,15 +1,21 @@
+//dependencies
 const express = require("express");
+const fs = require("fs");
+const path = require('path');
+
+//express app stuff
 const app = express();
 const PORT = process.env.PORT || 3000;
-//parsing data
-app.use(express.json());
+
+// data parsing stuff
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static(__dirname));
 
-//serves css/js/static assets
-app.use(express.static("public"))
-const allRoutes = require("./routes")
-app.use(allRoutes);
+//uses routes folder files
+require('./routes/routes')(app);
 
-app.listen(PORT,()=>{
-    console.log("listening to port " + PORT)
-})
+// port listener
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+});  

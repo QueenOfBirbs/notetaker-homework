@@ -1,7 +1,14 @@
 [
-  {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {}
+    {
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "Self-care",
+        "text": "Scream into the void"
+    },
+    {
+        "title": "Make Dinner",
+        "text": "JK I just bought Taco Bell"
+    }
 ]
