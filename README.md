@@ -36,4 +36,4 @@ didn't get to the delete bit though so that's missing
 NOTES
 
 photos of the finshed product and video are in the finished folder
-heroku link:
+heroku link:https://ia-hw-1.herokuapp.com/
