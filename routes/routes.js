@@ -20,7 +20,7 @@ module.exports = app => {
             let newNote = req.body;
             notes.push(newNote);
             updateDb();
-            return console.log("Added new note: "+newNote.title);
+            res.json(notes); 
         });
 
         //picks specific note with id
