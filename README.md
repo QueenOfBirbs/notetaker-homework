@@ -28,8 +28,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 WHAT I GOT DONE
 
-i got all the acceptance criteria though it definitely beat me up a little with figuring out paths and such
-didn't get to the delete bit though so that's missing
+i got all the acceptance criteria though it definitely beat me up a little with figuring out paths and such,
+hopefully the video works better this time, i've been messing around with other screenshot apps 
 
 
 
